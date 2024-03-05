@@ -8,7 +8,7 @@ Include :
 Abstraction,
 Custom Exception Handling,
 Layer Architecture
-
+Ado.Net,
 
 Exculude :
 Mocking in tests,
