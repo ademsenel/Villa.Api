@@ -2,10 +2,10 @@
 Certainly! Let’s discuss an example of a REST API along with its associated tests. Here are the key components to consider:
 
 # 1.REST API Example:
-. The REST API should follow best practices for abstraction, which means separating the implementation details from the interface.
-. Custom Exception Handling is crucial. Implement custom exceptions to handle specific error scenarios gracefully.
-. Consider using a Layered Architecture to organize your code. Common layers include presentation, business logic, and data access.
-. If you’re building a Microservices Architecture, ensure that each microservice has a well-defined API.
+1. The REST API should follow best practices for abstraction, which means separating the implementation details from the interface.
+2. Custom Exception Handling is crucial. Implement custom exceptions to handle specific error scenarios gracefully.
+3. Consider using a Layered Architecture to organize your code. Common layers include presentation, business logic, and data access.
+4. If you’re building a Microservices Architecture, ensure that each microservice has a well-defined API.
 Utilize ADO.NET for database access. ADO.NET provides data access components for connecting to databases, executing queries, and managing data.
 
 # 2.Exclusions:
