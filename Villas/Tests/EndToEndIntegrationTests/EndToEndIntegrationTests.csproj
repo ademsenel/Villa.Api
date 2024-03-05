@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<IsPackable>false</IsPackable>
+		<RunAnalyzersDuringBuild>True</RunAnalyzersDuringBuild>
+		<EnforceCodeStyleInBuild>False</EnforceCodeStyleInBuild>
+	<!--<PreserveCompilationContext>true</PreserveCompilationContext>-->
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="appsettings.Development.json" />
+		<None Remove="appsettings.json" />
+		<None Remove="appsettings.Production.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="appsettings.Development.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="appsettings.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="appsettings.Production.json">
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.2" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+		<PackageReference Include="MSTest.TestAdapter" Version="3.2.2" />
+		<PackageReference Include="MSTest.TestFramework" Version="3.2.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Update="SonarAnalyzer.CSharp" Version="9.20.0.85982">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Api\Villas.Api.csproj" />
+	  <ProjectReference Include="..\TestingShared\Testing.Shared.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,4 @@
+@VillaApi_HostAddress = https://localhost:7110
+GET {{VillaApi_HostAddress}}/Api/Villas/
+Accept: application/json
+###

@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<IsPackable>false</IsPackable>
+		<RunAnalyzersDuringBuild>True</RunAnalyzersDuringBuild>
+		<EnforceCodeStyleInBuild>False</EnforceCodeStyleInBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="MSTest.TestFramework" Version="3.2.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\DomainLayers\DomainLayers.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Update="SonarAnalyzer.CSharp" Version="9.20.0.85982">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+</Project>
