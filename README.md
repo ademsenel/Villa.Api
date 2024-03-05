@@ -7,8 +7,8 @@ Notify me if missing something or something is went wrong.
 Include : 
 Abstraction,
 Custom Exception Handling,
-Layer Architecture
-Ado.Net,
+Layer Architecture,
+Ado.Net
 
 Exculude :
 Mocking in tests,
